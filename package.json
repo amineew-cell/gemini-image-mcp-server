@@ -1,0 +1,58 @@
+{
+  "name": "gemini-image-mcp-server",
+  "version": "2.0.0",
+  "description": "MCP server for AI image generation and editing with Google Gemini. Supports 14 aspect ratios, 4 resolution tiers, and multiple models.",
+  "main": "dist/index.js",
+  "bin": {
+    "gemini-image": "dist/cli.js"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "cli": "node dist/cli.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "gemini",
+    "google-ai",
+    "google-genai",
+    "image-generation",
+    "image-editing",
+    "ai",
+    "generative-ai",
+    "typescript"
+  ],
+  "author": "Marghich",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/amineew-cell/gemini-image-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amineew-cell/gemini-image-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amineew-cell/gemini-image-mcp-server/issues"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "sharp": "^0.34.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

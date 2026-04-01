@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.amineew-cell/gemini-image-mcp-server",
+  "title": "Gemini Image",
+  "description": "AI image generation and editing with Google Gemini, supporting 14 aspect ratios and 4 resolution tiers",
+  "version": "2.0.0",
+  "repository": {
+    "url": "https://github.com/amineew-cell/gemini-image-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "gemini-image-mcp-server",
+      "version": "2.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "GOOGLE_API_KEY",
+          "description": "Google AI API key from https://aistudio.google.com/apikey",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
